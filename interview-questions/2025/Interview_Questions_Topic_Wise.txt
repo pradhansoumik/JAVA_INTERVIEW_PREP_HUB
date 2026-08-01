@@ -1,0 +1,328 @@
+================================================================================
+                    MERGED INTERVIEW QUESTIONS (TOPIC-WISE)
+================================================================================
+Companies covered: Infosys, Dell, Deloitte, Algosec, Cognizant, Asimily, Principal
+  Global Services, Thoughtspot, Freecharge, Mastercard, ZeMoSo Labs, Airtel, NPCI,
+  Druva, Backbase, EG Healthcare, SailPoint Technology, JPMC
+================================================================================
+
+
+================================================================================
+1. CORE JAVA
+================================================================================
+
+/*** OOP & Language Fundamentals ***/
+
+	- Diamond Problem in Java (Dell)
+	- Can main() be overridden? (Deloitte)
+	- Types of Polymorphism (Deloitte)
+	- String Constant Pool (Deloitte)
+	- Given a code snippet — guess the output (Deloitte)
+	- LinkedList vs LinkedHashSet (Deloitte)
+	- What is a default constructor? (Deloitte)
+	- Inheritance scenario — how do you call parent class constructor? (Deloitte)
+	- Checked Exception vs Unchecked Exception (Deloitte, ZeMoSo Labs)
+	- Multiple Inheritance in Java (ZeMoSo Labs)
+	- Abstract class vs Interface — cross questions (JPMC)
+	- Default and Static methods in Interface (JPMC)
+	- Functional Interface — cross questions (JPMC)
+	- SOLID Principles — especially Open/Closed Principle (Cognizant)
+	- Hashcode & Equals contract (Cognizant)
+
+/*** Memory, JVM & Concurrency ***/
+
+	- Stack Overflow Error vs Out of Memory Error (Algosec)
+	- Java Memory Model (Cognizant)
+	- Volatile keyword in Java (Cognizant, Algosec, ZeMoSo Labs)
+	- Atomic variables — deep dive (Algosec, Cognizant)
+	- Scenario: variable i incrementing across 100 threads (Algosec)
+	- Multi-threading — Future vs CompletableFuture (Principal Global Services)
+	- What is a fixed ThreadPool? (JPMC)
+	- Scenario: get unique data from a large dataset — which data structure? (Set) (ZeMoSo Labs)
+
+/*** Collections ***/
+
+	- Hashtable vs ConcurrentHashMap (Infosys)
+	- HashMap & ConcurrentHashMap — internal working (Principal Global Services)
+	- ArrayList vs HashMap — scenario: 1000 students, remove students with < 35% marks (SailPoint)
+	- Java Optional class (Principal Global Services)
+
+/*** Java Versions & Features ***/
+
+	- Java new features — Record (Cognizant)
+	- Java version in use & new features — switch case enhancement (Mastercard)
+	- Approach used during Java 8 to 17 migration (Mastercard)
+	- Generics — advantages & enhancements in newer Java versions (Mastercard)
+	- var keyword in Java (ZeMoSo Labs — Round 2)
+	- Java new feature changes and enhancements (ZeMoSo Labs — Round 2)
+
+/*** Streams API ***/
+
+	- What is Stream API? Questions on map, filter, etc. (ZeMoSo Labs)
+	- Can we reverse a stream? (ZeMoSo Labs)
+	- To print a statement while processing through stream — what do we use? (peek) (ZeMoSo Labs)
+	- Stream API — find duplicate characters (Cognizant)
+	- Stream API — find the longest word from a list (ZeMoSo Labs — Round 2)
+	- Stream API — find maximum word count / frequency (ZeMoSo Labs — Round 2)
+	- Sort list of Employee objects by salary using Comparator (JPMC)
+
+	Coding snippets asked:
+	
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+    numbers.stream().filter(n -> n % 2 == 0).map(n -> n * 2);  // What is the output?
+
+    List<String> words = Arrays.asList("Java", "Stream", "API", "Development");
+    // Find the longest word using streams.
+
+    List<String> words = Arrays.asList("Java", "Python", "C", "Java", "C++", "Python", "Go", "Rust", "C");
+    // Find the maximum word count / most frequent word.
+
+
+================================================================================
+2. DESIGN PATTERNS
+================================================================================
+
+- Builder Pattern — cross questions (Infosys)
+- Singleton Pattern — write a singleton class, cross questions (Infosys)
+- Design a double-locking thread-safe Singleton class (Cognizant)
+- Strategy Design Pattern — scenario: payment service with multiple providers (Principal Global Services)
+- Saga Design Pattern — see Microservices section for detailed scenarios
+
+
+================================================================================
+3. DATA STRUCTURES & ALGORITHMS (DSA)
+================================================================================
+
+--- Array / Sorting / Search ---
+
+	- Find the immediate next greater number of a given number (cannot repeat digits)
+		Input: 123  → Output: 132
+		Input: 21   → Output: -1
+		Input: 1239876 → Output: ? (Infosys)
+
+	- Sort array of characters — Dutch National Flag variant
+		Input:  ['b','b','c','a','b','c','b','b','a']
+		Output: ['a','a','b','b','b','b','b','c','c']
+		Space: O(1), Time: O(N) (Algosec, JPMC)
+
+	- Dutch National Flag — sort array of 0s, 1s, 2s
+		int[] arr = {0,0,1,0,1,2,1,1} (JPMC)
+
+	- Find minimum element in a rotated sorted array (unique elements, rotated at least once)
+		[3,4,5,1,2] → 1 | [4,5,6,7,0,1,2] → 0 | [11,13,15,17] → 11 (ZeMoSo Labs — Round 2)
+
+	- Find closest element to target in sorted array
+		arr = {2,5,6,7,8,8,9}, target = 4 → 5
+		arr = {2,3,15,13,18}, target = 12 → 12
+		arr = {1,2,3,4,15,18}, target = 11 → 15 (ZeMoSo Labs)
+
+	- Two Sum problem
+		nums = [50, 75, 100, 125], target = 175 → return [1, 2] (EG Healthcare)
+
+	- Calculate minimum difference pairs from a list and print in ascending order
+		List = {6,4,2,10} → (2,4), (4,6) (NPCI)
+
+	- Spiral Matrix (Asimily)
+
+	- Bulls and Cows — https://leetcode.com/problems/bulls-and-cows/ (Asimily)
+
+--- String ---
+
+	- Check if a given string of brackets is balanced or not (Dell)
+	- Longest valid (well-formed) parentheses substring
+		"(()" → 2 | ")()())" → 4 (ZeMoSo Labs — Round 2)
+	- Lexicographically smallest subsequence containing all distinct characters exactly once
+		"bcabc" → "abc" | "cbacdcbc" → "acdb" (Freecharge)
+	- Regular expression matching with '.' and '*'
+		s = "aa", p = "a" → false (Thoughtspot)
+	- Substring with concatenation of all words (permutation)
+		s = "barfoothefoobarman", words = ["foo","bar"] → [0,9] (Thoughtspot)
+	- Print the most repeating character of a word in a sentence
+		Input: "I am successful in Java coding" → Output: "successful s 3" (SailPoint — Round 2)
+
+--- Stack / Queue / Cache ---
+
+	- Implement a Stack with push, pop, peek, and min — optimize to O(1) time & O(1) space (SailPoint — Round 1)
+	- Design and implement LRU Cache (Airtel)
+
+--- Math / Logic ---
+
+	- Nth digit in infinite sequence [1,2,3,4,5,6,7,8,9,10,11,...] (1-indexed)
+		N = 9 → 9 | N = 10 → 1 (Freecharge)
+
+	- Box and stone distribution problem
+		10 boxes with capacities [1,2,4,8,16], 1000 stones — determine valid/invalid distributions (Algosec)
+
+--- External Sort / Large Data ---
+
+	- Sort a 100 GB file of names alphabetically on a machine with 1 GB RAM and 1 TB disk (external merge sort approach) (Algosec)
+
+
+================================================================================
+4. SPRING BOOT
+================================================================================
+
+- Design a Spring Boot application (Deloitte)
+- Spring — IOC & Dependency Injection (Algosec)
+- Bean scope (Deloitte)
+- Bean lifecycle (Cognizant)
+- Spring Boot internals (Cognizant)
+- Spring Boot profiles (Cognizant)
+- How to address circular dependency in Spring Boot (Infosys)
+- Internals of @Transactional annotation (Algosec)
+- @Primary and @Qualifier annotations (ZeMoSo Labs)
+- Exception handling in Spring Boot (ZeMoSo Labs)
+- Spring Boot @ControllerAdvice (ZeMoSo Labs — Round 2)
+- Swagger — questions on API documentation (ZeMoSo Labs — Round 2)
+- DTO layer — Controller ↔ DTOs: controllers receive DTOs from clients and return DTOs in responses (ZeMoSo Labs — Round 2)
+- PUT API implementation with Spring Data JPA
+    Request body: { "description": "xyz", "priority": 10 } (Backbase)
+- Debug and implement a REST API findById(id) method (NPCI)
+
+
+================================================================================
+5. MICROSERVICES & DISTRIBUTED SYSTEMS
+================================================================================
+
+--- Architecture & Fundamentals ---
+
+	- Features / characteristics of microservices (Infosys)
+	- What is a monolith? How is it deployed? (Principal Global Services)
+	- How are microservices deployed? (Principal Global Services)
+	- Design pattern used to break monolith into microservices (Principal Global Services)
+	- On what basis did you define microservices when modernizing monolith? (JPMC)
+	- Monolith to microservices — benefits, disadvantages, scenario-based questions (SailPoint)
+	- Communication between microservices (ZeMoSo Labs — Round 2)
+	- How to scale microservices — horizontal vs vertical scaling (SailPoint)
+	- Database-per-service design pattern and scaling implications (SailPoint)
+
+--- Design Patterns ---
+
+	- Saga pattern — scenario-based questions:
+		* How do you compensate if payment service fails — cascade failures to Inventory & User Service? (Infosys)
+		* What if a failure event didn't reach the Inventory service? (Infosys)
+		* Event-driven architecture with Saga (Cognizant)
+		* Saga pattern (Deloitte, SailPoint — both rounds)
+	- Fault tolerance (Deloitte)
+	- Rate limiting (Deloitte, Cognizant)
+	- Retry design pattern (Cognizant, Mastercard)
+	- Circuit breaker pattern (ZeMoSo Labs — Round 2)
+	- Event-driven architecture (ZeMoSo Labs — Round 2)
+	- Distributed transactions (Cognizant)
+
+--- Security & API Design ---
+
+	- How do you ensure security in microservices? Authentication, role-based authorization (Principal Global Services)
+	- Authentication & Authorization flow — end-to-end project flow (Asimily)
+	- Authentication & Authorization in microservices (JPMC)
+	- Authentication during internal service-to-service calls (JPMC)
+	- REST API design principles — stateful vs stateless REST API (Principal Global Services)
+
+
+================================================================================
+6. DATABASES & SQL
+================================================================================
+
+--- SQL Queries ---
+
+	- Find student names whose average score > 80 and who scored in more than 1 subject
+		Table: StudName, StudMarks, StudSubject (Infosys)
+
+	- Get customer data even if customers have not placed any order — LEFT JOIN (write the query) (ZeMoSo Labs)
+
+	- Identify duplicate rows in a table — write query or pseudo-code (ZeMoSo Labs)
+
+	- Employees whose salary is greater than the average salary of their department
+		Table: Employees(emp_id, name, dept_id, salary) (ZeMoSo Labs — Round 2)
+		Approach 1: Correlated subquery with AVG
+		Approach 2: JOIN with grouped subquery on dept_id
+
+	- Select id, first_name, last_name where concatenated name length < 12, ordered by length ASC, name ASC, id ASC (NPCI)
+
+--- Database Concepts & Scenarios ---
+
+	- Hibernate — lazy loading (Algosec)
+	- Why Postgres over Oracle? (Asimily)
+	- Performance issues observed in Postgres and how you solved them (Asimily)
+	- Challenges faced during Oracle to Postgres migration (Principal Global Services, SailPoint — Round 2)
+	- Database table design — student, teacher, class with 1-to-many relationships (SailPoint — Round 2)
+	- Design API request and DB schema for a multi-product order with discounts
+		TV ₹50000 (20% off), Phone ₹30000 (10% off), Refrigerator ₹40000 (30% off) (Airtel)
+
+
+================================================================================
+7. SYSTEM DESIGN & HIGH-LEVEL DESIGN (HLD)
+================================================================================
+
+	- HLD of Library Management System (Principal Global Services)
+	- Design a data backup system — local copy + cloud copy (OneDrive)
+		* What if local system crashes — how to recover?
+		* Regular snapshot copies to cloud — how to save cost? (Druva)
+	- Design and implement order submission API with multiple products and offers (Airtel)
+	- Interviewer focus: High-Level Design (Principal Global Services)
+
+
+================================================================================
+8. DEVOPS, CI/CD & PROCESS
+================================================================================
+
+	- CI/CD process (Principal Global Services)
+	- SDLC process (Algosec)
+	- Agile process (Deloitte)
+	- Source code management — code merge process on Bitbucket (Asimily)
+	- Code review process — junior logged sensitive information, how do you handle? (ZeMoSo Labs)
+
+
+================================================================================
+9. PROJECT, BEHAVIORAL & GENERAL
+================================================================================
+
+--- Project & Experience (asked in nearly every interview) ---
+
+	- Project overview, architecture, tech stack, product details
+	- Current role and responsibilities
+	- Challenges faced during tasks / migrations / development
+	- Questions based on resume
+	- Challenges resolved for junior developers (Mastercard)
+	- Experience, tech stack discussion with hiring manager (Druva)
+
+--- AI / GenAI ---
+
+	- Gen AI related questions — how are you leveraging AI? (Dell)
+	- AI use cases (Deloitte)
+
+--- Behavioral / Non-Technical ---
+
+	- How do you resolve conflict between two teammates? (Principal Global Services)
+	- Stakeholders, release process, epic-level commitment / exit criteria (Principal Global Services)
+
+
+================================================================================
+10. CODING TEST PLATFORMS
+================================================================================
+
+--- NPCI (HackerRank) ---
+
+	1. Minimum difference pairs from list of integers
+	2. Debug & implement REST API findById(id)
+	3. SQL query on name concatenation and ordering
+
+--- Backbase (Codility — screen share) ---
+
+	1. PUT API implementation with Spring Data JPA
+	2. Multiple choice coding questions
+
+--- Thoughtspot (DSA Round) ---
+
+	1. Regular expression matching (Hard)
+	2. Substring with concatenation of all words (Hard)
+
+--- Freecharge (DSA Round) ---
+
+	1. Lexicographically smallest subsequence with all distinct characters
+	2. Nth digit in infinite integer sequence
+
+
+================================================================================
+                              END OF DOCUMENT
+================================================================================
