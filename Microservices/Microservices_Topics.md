@@ -27,5 +27,5 @@
   5. Cross-Cutting Concerns Patterns
        - **Externalized Configuration Pattern**
        - **Service Discovery Pattern**
-       - **Circuit Breaker Pattern**
+       - **Circuit Breaker Pattern** (Retry / Timeout / Fallback)
        - **Blue-Green Deployment Pattern**
