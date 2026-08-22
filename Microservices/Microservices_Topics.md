@@ -8,9 +8,9 @@
        - Decompose by Subdomain
        - **Strangler Pattern**
        - Bulkhead Pattern
-       - Sidecar Pattern
+       - **Sidecar Pattern** (service Mesh)
   2. Integration Patterns
-       - **API Gateway Pattern**
+       - **API Gateway Pattern** (Auth, Rate Limiting)
        - Aggregator Pattern
        - Proxy Pattern
   3. Database Patterns
