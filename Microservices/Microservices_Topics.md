@@ -14,8 +14,8 @@
        - Aggregator Pattern
        - Proxy Pattern
   3. Database Patterns
-       - Database per Service Pattern
-       - Shared Database Pattern
+       - **Database per Service Pattern**
+       - **Shared Database Pattern**
        - **Event Sourcing Pattern**
        - **CQRS Pattern**
        - **Saga Pattern**
