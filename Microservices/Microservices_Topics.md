@@ -15,6 +15,10 @@
   - Loose coupling & high cohesion (API/events as contracts)
   - Scalability per service (scale hot services independently)
   - Team autonomy (often aligned with Conway’s Law / two-pizza teams)
+- Communication between Microservices (sync/async, Gateway vs S2S)
+  - Notes: `MICROSERVICE-DESIGN-PATTERNS/00-fundamentals/01-SERVICE-COMMUNICATION.md`
+- Security — Authentication & Authorization (JWT, Gateway, mTLS)
+  - Notes: `MICROSERVICE-DESIGN-PATTERNS/00-fundamentals/02-SECURITY-AUTHN-AUTHZ.md`
 - Microservices Design Patterns
   1. Decomposition Patterns
        - Decompose by Business Capability
