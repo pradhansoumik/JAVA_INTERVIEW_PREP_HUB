@@ -1,7 +1,20 @@
 ## Microservices Topics
 
 - Monolithic vs Microservices Architecture
-- Characteristics of Microservices
+- Features/Characteristics of Microservices
+  - Single Responsibility / focused on one business capability
+  - Independently deployable services
+  - Decentralized data management (Database per Service)
+  - Decentralized governance (polyglot language/DB where useful)
+  - Smart endpoints & dumb pipes (lightweight HTTP/messaging, not ESB)
+  - Design for failure (timeouts, retries, circuit breaker, fallback)
+  - Infrastructure automation (CI/CD, containers, K8s/OCP)
+  - Observable (logs, metrics, traces, health)
+  - Evolutionary design (Strangler, incremental split from monolith)
+  - Organized around business capabilities / bounded contexts (DDD)
+  - Loose coupling & high cohesion (API/events as contracts)
+  - Scalability per service (scale hot services independently)
+  - Team autonomy (often aligned with Conway’s Law / two-pizza teams)
 - Microservices Design Patterns
   1. Decomposition Patterns
        - Decompose by Business Capability
@@ -29,3 +42,4 @@
        - **Service Discovery Pattern**
        - **Circuit Breaker Pattern** (Retry / Timeout / Fallback)
        - **Blue-Green Deployment Pattern**
+       - **Event-Driven Architecture** (Pub/Sub, Saga Choreography)
