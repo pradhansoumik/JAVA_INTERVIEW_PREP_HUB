@@ -28,6 +28,7 @@
        - **Sidecar Pattern** (service Mesh)
   2. Integration Patterns
        - **API Gateway Pattern** (Auth, Rate Limiting)
+       - **Backend for Frontend (BFF)**
        - Aggregator Pattern
        - Proxy Pattern
   3. Database Patterns
