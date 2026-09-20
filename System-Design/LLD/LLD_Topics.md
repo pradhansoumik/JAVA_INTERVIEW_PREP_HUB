@@ -77,3 +77,23 @@
         - Visitor Pattern
         - Iterator Pattern
         - Memento Pattern
+
+---
+
+Multithreading & Concurrency
+
+---
+
+Dependency Injection
+
+---
+
+Exceptions & Error Handling
+
+---
+
+Best Practices in LLD
+
+---
+
+Common LLD Problems - Case Studies
