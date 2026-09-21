@@ -80,20 +80,20 @@
 
 ---
 
-Multithreading & Concurrency
+- Multithreading & Concurrency
 
 ---
 
-Dependency Injection
+- Dependency Injection
 
 ---
 
-Exceptions & Error Handling
+- Exceptions & Error Handling
 
 ---
 
-Best Practices in LLD
+- Best Practices in LLD
 
 ---
 
-Common LLD Problems - Case Studies
+- Common LLD Problems - Case Studies
