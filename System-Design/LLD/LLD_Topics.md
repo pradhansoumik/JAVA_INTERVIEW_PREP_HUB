@@ -85,6 +85,11 @@
 ---
 
 - Dependency Injection
+  - Constructor Injection
+  - Setter Injection
+  - Interface Injection
+  - Best Practices for Implementing Dependency Injection in Java
+  - Framework Dependency Injection (DI) with Spring
 
 ---
 
@@ -93,6 +98,9 @@
 ---
 
 - Best Practices in LLD
+  - All About APIs
+  - Database Design & Integration
+  - How to Approach LLD Interview
 
 ---
 
