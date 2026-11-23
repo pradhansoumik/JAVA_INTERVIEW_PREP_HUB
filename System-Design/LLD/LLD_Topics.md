@@ -81,6 +81,23 @@
 ---
 
 - Multithreading & Concurrency
+  - Multithreading & Concurrency
+    - Program, Process, and Thread
+    - Cores in CPU
+    - Context Switching
+    - Multithreading
+    - Concurrency vs Parallelism
+    - Process vs Thread
+    - Shared Memory vs Isolated Memory
+    - Fault Tolerance
+    - Isolation
+
+  - Creating and Managing Threads
+  - Thread Pools & Executors
+  - Thread Safety and Synchronization
+  - Locks & Synchronization Mechanisms
+  - Deadlocks and Prevention techniques
+  - Producer-Consumer Problem
 
 ---
 
